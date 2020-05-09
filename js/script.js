@@ -15,7 +15,7 @@
     Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
     Contacto:   https://parzibyte.me/blog/contacto/
 */
-const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
+const MAXIMOS_INTENTOS = 8*8, // Intentos máximos que tiene el jugador
     COLUMNAS = 4, // Columnas del memorama
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1, // Por cuántos segundos mostrar ambas imágenes
     NOMBRE_IMAGEN_OCULTA = "./img/start.jpg"; // La imagen que se muestra cuando la real está oculta
