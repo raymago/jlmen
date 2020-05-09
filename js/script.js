@@ -18,18 +18,22 @@
 const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
     COLUMNAS = 4, // Columnas del memorama
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1, // Por cuántos segundos mostrar ambas imágenes
-    NOMBRE_IMAGEN_OCULTA = "./img/question.png"; // La imagen que se muestra cuando la real está oculta
+    NOMBRE_IMAGEN_OCULTA = "./img/start.jpg"; // La imagen que se muestra cuando la real está oculta
 new Vue({
     el: "#app",
     data: () => ({
         // La ruta de las imágenes. Puede ser relativa o absoluta
         imagenes: [
-            "./img/cabra.jpg",
-            "./img/conejo.jpg",
-            "./img/leon.jpg",
-            "./img/oveja.jpg",
-            "./img/perro.jpg",
-            "./img/gato.jpg",
+            "./img/1.jpg",
+            "./img/2.jpg",
+            "./img/3.jpg",
+            "./img/4.jpg",
+            "./img/5.jpg",
+            "./img/6.jpg",
+            "./img/7.jpg",
+            "./img/8.jpg",
+            "./img/9.jpg",
+            "./img/10.jpg",
         ],
         memorama: [],
         // Útiles para saber cuál fue la carta anteriormente seleccionada
@@ -47,7 +51,7 @@ new Vue({
         mostrarCreditos() {
             Swal.fire({
                 title: "Acerca de",
-                html: `Creado por <a href="//parzibyte.me/blog">Luis Cabrera Benito</a>
+                html: `Creado por <a href="//parzibyte.me/blog">Luis Cabrera Benito (adaptado por raymago.es)</a>
                 <br>
                 <strong>Créditos</strong>
                 <br>
